@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rand = Math.floor(Math.random()*100 +1);
+        let count = 0;
+
+        function guess(){
+
+            let num = document.getElementById("num1").value;
+            
+            if (num == "")
+                document.getElementById("result").value = ("숫자를 입력하세요.");
+
+            else if (num == rand){
+                let result = document.getElementById("result")
+                .value = ("정답입니다.");
+            }
+            else if (rand > num){
+                document.getElementById("result").value = (num + "보다 큽니다.");
+                document.getElementById("count1").value = 
+                (++count +"번");
+            }
+                
+
+            else{
+                document.getElementById("result").value = (num + "보다 작습니다.");
+                document.getElementById("count1").value = 
+                (++count +"번");
+            }                 
+        
+        }
+
+        function reset() {
+            ran = Math.floor(Math.random() * 100 + 1);
+            count = 0;
+            document.getElementById("result").value = "";
+            document.getElementById("count1").value = "";
+            document.getElementById("num1").value = "";
+
+        }
+        
+    </script>
+
+
+    <h1>숫자 맞추기 게임</h1><br>
+
+
+    <p>이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다. 숫자는 1부터 100까지 
+        입니다.
+    </p>
+
+    <p>숫자: <input type="text" id="num1" size="5"> 
+    <input type="button" id="sel" value="확인" onclick="guess()"></p>
+    <p>추측횟수: <input type="text" id="count1" size="5"></p>
+    <p>힌트: <input type="text" id="result"  size="15"></p>
+    <p><input type="button" id="reset" value="다시하기" onclick="reset()"></p>
+
+</body>
+</html>

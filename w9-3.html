@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<link rel="stylesheet" href="w9-3.css">
+<script src="w9-3.js"></script>
+
+<body>
+ 
+    <table>
+        <tr>
+            <td id="td1" colspan="5"><input class="input1" id="cal"  type="text"></td>
+        </tr>
+        
+        <tr>
+            <td onclick="add(1)" id="td2"><input class="input2" type="button" value="1"></td>
+            <td onclick="add(2)"id="td2"><input class="input2" type="button" value="2"></td>
+            <td onclick="add(3)"id="td2"><input class="input2" type="button" value="3"></td>
+            <td onclick="add('+')"id="td2"><input class="input2" type="button" value="+"></td>
+            <td onclick="add('=')"id="td2"><input class="input2" type="button" value="-"></td>
+        </tr>
+
+        <tr>
+            <td onclick="add(4)"id="td2"><input class="input2" type="button" value="4"></td>
+            <td onclick="add(5)"id="td2"><input class="input2" type="button" value="5"></td>
+            <td onclick="add(6)"id="td2"><input class="input2" type="button" value="6"></td>
+            <td onclick="add('*')"id="td2"><input class="input2" type="button" value="*"></td>
+            <td onclick="add('/')"id="td2"><input class="input2" type="button" value="/"></td>
+        </tr>
+
+        <tr>
+            <td onclick="add(7)"id="td2"><input class="input2" type="button" value="7"></td>
+            <td onclick="add(8)"id="td2"><input class="input2" type="button" value="8"></td>
+            <td onclick="add(9)"id="td2"><input class="input2" type="button" value="9"></td>
+            <td onclick="calculate()"id="td2"><input class="input2" type="button" value="="></td>
+            <td onclick="reset()" id="td2"><input class="input2" type="button" value="C"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

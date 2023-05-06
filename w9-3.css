@@ -1,0 +1,30 @@
+
+#td1{
+    text-align: left;
+    
+}
+
+.input1{
+    background-color :cornflowerblue;
+    border: none;
+    color: white;
+    width: 480px;
+    height: 35px;
+    font-size: 30px;
+
+}
+
+#td2{
+    text-align: center;
+    color:black;
+ 
+}
+
+.input2{
+    background-color: cornflowerblue;
+    border: none;
+    width: 90px;
+    height: 50px;
+    font-size: 30px;
+
+}
