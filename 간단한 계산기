@@ -23,7 +23,7 @@
             <td onclick="add(2)"id="td2"><input class="input2" type="button" value="2"></td>
             <td onclick="add(3)"id="td2"><input class="input2" type="button" value="3"></td>
             <td onclick="add('+')"id="td2"><input class="input2" type="button" value="+"></td>
-            <td onclick="add('=')"id="td2"><input class="input2" type="button" value="-"></td>
+            <td onclick="add('-')"id="td2"><input class="input2" type="button" value="-"></td>
         </tr>
 
         <tr>
