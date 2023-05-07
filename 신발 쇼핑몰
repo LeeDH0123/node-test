@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shoe Shopping Mall</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #header {
+        background-color: #333;
+        color: #fff;
+        font-size: 35px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      #banner {
+        background-image: url("banner.jpg");
+        background-size: cover;
+        height: 150px;
+      }
+
+      #banner h1 {
+        color: black;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 3px 3px wheat;
+      }
+
+      #featured-shoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .shoe-item {
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: -30px;
+        margin: 10px;
+        padding: 40px;
+        text-align: center;
+        width: 220px;
+      }
+
+      .shoe-item img {
+        width: 250px;
+      }
+
+      .shoe-item h3 {
+        margin-top: 10px;
+      }
+
+      #footer {
+        background-color: #333;
+        color: #fff;
+        margin-top: -10px;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Get the Perfect Pair</h1>
+    </div>
+
+    <div id="banner">
+      <h1>Featured Shoes</h1>
+    </div>
+
+    <div id="main-content">
+      <div id="featured-shoes">
+        <div class="shoe-item">
+          <img src="shoe1.jpg" alt="Shoe 1" />
+          <h3>Shoe 1</h3>
+          <p>$99.99</p>
+        </div>
+
+        <div class="shoe-item">
+          <img src="shoe2.jpg" alt="Shoe 2" />
+          <h3>Shoe 2</h3>
+          <p>$79.99</p>
+        </div>
+
+        <div class="shoe-item">
+          <img src="shoe3.jpg" alt="Shoe 3" />
+          <h3>Shoe 3</h3>
+          <p>$129.99</p>
+        </div>
+
+        <!-- Add more shoe items here -->
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>&copy; 2023 Shoe Shopping Mall.</p>
+    </div>
+  </body>
+</html>
