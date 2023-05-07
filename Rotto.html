@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lottery Number Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lottery Number Generator</h1>
+    <button id="generate-btn">Generate Numbers</button>
+    <div id="result"></div>
+
+    <script>
+      function generateLotteryNumbers() {
+        var numbers = [];
+        while (numbers.length < 6) {
+          var randomNumber = Math.floor(Math.random() * 49) + 1;
+          if (numbers.indexOf(randomNumber) === -1) {
+            numbers.push(randomNumber);
+          }
+        }
+        return numbers;
+      }
+
+      document
+        .getElementById("generate-btn")
+        .addEventListener("click", function () {
+          var resultElement = document.getElementById("result");
+          var numbers = generateLotteryNumbers();
+          resultElement.textContent = "Lottery Numbers: " + numbers.join(", ");
+        });
+    </script>
+  </body>
+</html>
